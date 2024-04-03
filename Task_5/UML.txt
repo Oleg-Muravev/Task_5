@@ -1,0 +1,159 @@
+http://www.plantuml.com/plantuml/
+
+
+class Client{
+-__surname
+-__name
+-__middlename
+-__address
+-__phone
++setSurname()
++setName()
++setMiddlename()
++setAddress()
++setPhone()
++getSurname()
++getName()
++getMiddlename()
++getAddress()
++getPhone()
++getClientStr()
+}
+
+class General{
+-__code
++setCode()
++getCode()
+}
+
+class GeneralList{
+-__list
++clear()
++getItems()
++findByCode()
++getNewCode()
++getCodes()
++getIdems()
++appendItem()
++removeItem()
++getStr()
+}
+
+class Packages{
+-__date
+-__quantity
+-__discount
++setDate()
++setQuantity()
++setDiscount()
++appendClient()
++removeClient()
++appendRoute()
++removeRoute()
++getClientCodes()
++getRouteCodes()
++getPackageStr()
+}
+
+class TravelCompany{
++createRoute()
++newRoute()
++getRoute()
++removeRoute()
++getRouteList()
++getRouteCodes()
++createClient()
++newClient()
++getClient()
++removeClient()
++getClientList()
++getClientCodes()
++createTravel()
++newTravel()
++getTravel()
++removeTravel()
++getTravelList()
++getTravelCodes()
++getStr()
+}
+
+class Routes{
+-__country
+-__climat
+-__duration
+-__hotel
+-__cost
++setCountry()
++setClimat()
++setDuration()
++setHotel()
++setCost()
++getCountry()
++getClimat()
++getDuration()
++getHotel()
++getCost()
++getRouteStr()
+}
+
+class Data {
+-__data
+-__inp
+-__out
++setData()
++setInp()
++setOut()
++getData()
++getInp()
++getOut()
++readFile()
++writeFile()
++read()
++write()
+}
+
+
+class DataXML{
++read()
++write()
+}
+
+class DataSQL{
++read()
++write()
+}
+
+class ClientList{
++getStr()
++createItem()
++newItem()
+}
+
+class TravelList{
++getStr()
++createItem()
++newItem()
+}
+
+class RouteList{
++getStr()
++createItem()
++newItem()
+}
+
+RouteList o-u- Routes
+GeneralList <|-- RouteList
+GeneralList <|-- ClientList
+GeneralList <|-- TravelList
+Packages o-u- ClientList
+Packages o-u- RouteList
+Data <|-- DataXML
+Data <|-- DataSQL
+General <|-- Client
+General <|-- Routes
+General <|-- Packages
+ClientList o-u- Client
+TravelList o-u- Packages
+TravelCompany o-u- ClientList
+TravelCompany o-u- RouteList
+TravelCompany o-u- TravelList

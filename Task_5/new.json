@@ -1,0 +1,80 @@
+{
+  "clients": [
+    {
+      "code": 1,
+      "surname": "SUR1",
+      "name": "NM1",
+      "middlename": "MN1",
+      "address": "ADR1",
+      "phone": "PH1"
+    },
+    {
+      "code": 2,
+      "surname": "SUR2",
+      "name": "NM2",
+      "middlename": "MN2",
+      "address": "ADR2",
+      "phone": "PH2"
+    },
+    {
+      "code": 3,
+      "surname": "SUR3",
+      "name": "NM3",
+      "middlename": "MN3",
+      "address": "ADR3",
+      "phone": "PH3"
+    }
+  ],
+  "routes": [
+    {
+      "code": 1,
+      "country": "CNT1",
+      "climate": "CLM1",
+      "duration": 10,
+      "hotel": "INF1...",
+      "cost": 100
+    },
+    {
+      "code": 2,
+      "country": "CNT2",
+      "climate": "CLM2",
+      "duration": 20,
+      "hotel": "INF2...",
+      "cost": 200
+    },
+    {
+      "code": 3,
+      "country": "CNT3",
+      "climate": "CLM3",
+      "duration": 30,
+      "hotel": "INF3...",
+      "cost": 300
+    },
+    {
+      "code": 4,
+      "country": "CNT4",
+      "climate": "CLM4",
+      "duration": 40,
+      "hotel": "INF4...",
+      "cost": 400
+    }
+  ],
+  "travels": [
+    {
+      "code": 1,
+      "date": "11.11.11",
+      "quantity": 1,
+      "discount": 1,
+      "clients": [ 1, 2 ],
+      "routes": [ 1, 2 ]
+    },
+    {
+      "code": 2,
+      "date": "22.22.22",
+      "quantity": 2,
+      "discount": 2,
+      "clients": [ 3 ],
+      "routes": [ 4 ]
+    }
+  ]
+}

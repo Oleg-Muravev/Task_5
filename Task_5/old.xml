@@ -1,0 +1,23 @@
+<data>
+    <client code="1" surname="SUR1" name="NM1" middlename="MN1" address="ADDR1" phone="PH1"/>
+    <client code="2" surname="SUR2" name="NM2" middlename="MN2" address="ADDR2" phone="PH2"/>
+    <client code="3" surname="SUR3" name="NM3" middlename="MN3" address="ADDR3" phone="PH3"/>
+
+
+    <route code="1" country="CNT1" climate="CLM1" duration="10" hotel="HOT1" cost="100"/>
+    <route code="2" country="CNT2" climate="CLM2" duration="20" hotel="HOT2" cost="200"/>
+    <route code="3" country="CNT3" climate="CLM3" duration="30" hotel="HOT3" cost="300"/>
+    <route code="4" country="CNT4" climate="CLM4" duration="40" hotel="HOT4" cost="400"/>
+
+
+    <travel code="1" date="11.11.11" quantity="1" discount="1">
+        <client code="1"/>
+        <client code="2"/>
+        <route code="1"/>
+        <route code="2"/>
+    </travel>
+    <travel code="2" date="22.22.22" quantity="2" discount="2">
+        <client code="3"/>
+        <route code="4"/>
+    </travel>
+</data>
